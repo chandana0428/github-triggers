@@ -1,0 +1,10 @@
+name: Public Trigger
+
+on:
+  public
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Repository Made Public"
