@@ -1,0 +1,10 @@
+name: Discussion Trigger
+
+on:
+  discussion
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Discussion Created"
