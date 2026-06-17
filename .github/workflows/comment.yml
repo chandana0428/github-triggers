@@ -1,0 +1,10 @@
+name: Issue Comment Trigger
+
+on:
+  issue_comment
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Comment Added"
