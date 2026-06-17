@@ -1,0 +1,16 @@
+name: GitHub Triggers 
+on:
+  push:
+  pull_request:
+  create:
+  delete:
+  issues:
+  issue_comment:
+  fork:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Executed
+        run: echo "Github Trigger Executed Successfully"
