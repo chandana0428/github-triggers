@@ -1,0 +1,10 @@
+name: Status Trigger
+
+on:
+  status
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Status Changed"
