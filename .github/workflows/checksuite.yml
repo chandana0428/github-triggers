@@ -1,0 +1,19 @@
+name: Check Suite Trigger 
+
+  
+
+on: 
+
+  check_suite 
+
+  
+
+jobs: 
+
+  test: 
+
+    runs-on: ubuntu-latest 
+
+    steps: 
+
+      - run: echo "Check Suite Triggered" 
