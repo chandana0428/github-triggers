@@ -1,0 +1,10 @@
+name: Discussion Comment Trigger
+
+on:
+  discussion_comment
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Discussion Comment Added"
