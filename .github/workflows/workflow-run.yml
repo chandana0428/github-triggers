@@ -1,0 +1,13 @@
+name: Workflow Run Trigger
+
+on:
+  workflow_run:
+    workflows: ["Main Workflow"]
+    types:
+      - completed
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Workflow Run Triggered"
